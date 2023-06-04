@@ -3,7 +3,6 @@ package konradrudnicki.githubscraper.controllers;
 
 import jakarta.servlet.http.HttpServletRequest;
 import konradrudnicki.githubscraper.exceptions.CustomError;
-import konradrudnicki.githubscraper.exceptions.UserNotFoundException;
 import konradrudnicki.githubscraper.model.Repository;
 import konradrudnicki.githubscraper.services.ScraperService;
 import org.kohsuke.github.GHFileNotFoundException;
