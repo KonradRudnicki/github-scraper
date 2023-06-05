@@ -8,7 +8,7 @@ import lombok.Setter;
 @AllArgsConstructor
 @Getter
 @Setter
-public class CustomError {
+public class GithubError {
 
     private int status;
     private String message;

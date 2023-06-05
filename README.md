@@ -27,14 +27,14 @@
 
 
 ## Usage
-In order to get informations that are above-mentioned send 
+In order to get information that are above-mentioned send 
 GET request with URL:
 
 `http://localhost:8080/repos/{username}`
 
 Replace `{username}` with the Github username. 
-If the user doesn't exist application gives 404 error.
+If the user doesn't exist application returns 404 error.
 
 The application accepts requests with 
-`Content-type: application/json header`
+`Content-type: application/json` header
 Otherwise it gives 406 error.
