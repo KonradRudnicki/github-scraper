@@ -5,6 +5,7 @@ import konradrudnicki.githubscraper.model.Repository;
 import org.kohsuke.github.GHRepository;
 import org.kohsuke.github.GHUser;
 import org.kohsuke.github.GitHub;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.io.IOException;
@@ -18,8 +19,9 @@ public class ScraperService {
 
     private final GitHub gitHub;
 
-    public ScraperService() throws IOException {
-        this.gitHub = GitHub.connectAnonymously();
+    @Autowired
+    public ScraperService(GitHub gitHub) {
+        this.gitHub = gitHub;
     }
 
     public List<Repository> getForkedRepos(String username) throws IOException {
